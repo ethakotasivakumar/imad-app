@@ -3,7 +3,7 @@ console.log('Loaded!');
 //moving the image
 
 var image=document.getElementById('logo');
-var marginleft;
+var marginleft=0;
 
 function moveRight(){
     marginleft=marginleft+10;
