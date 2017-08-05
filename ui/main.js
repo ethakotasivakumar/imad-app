@@ -4,6 +4,6 @@ console.log('Loaded!');
 
 var image=document.getElementById('logo');
 image.onclick=function(){
-    var interval=setInterval(moveLeft,100)
+    var interval=setInterval(moveRight,100)
  //   image.style.marginLeft='200px';
 }
