@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 //moving the image
 
-var image=document.getElementById('logo');
+var img=document.getElementById('logo');
 var marginleft=0;
 
 function moveRight(){
@@ -10,7 +10,7 @@ function moveRight(){
     image.style.marginleft=marginleft+'px';
 }
 
-image.onclick=function(){
+img.onclick=function(){
     var interval=setInterval(moveRight,50);
  //   image.style.marginLeft='200px';
 }
