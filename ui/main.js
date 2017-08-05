@@ -4,5 +4,5 @@ console.log('Loaded!');
 
 var image=document.getElementById('logo');
 image.onclick=function(){
-    image.style.marginLeft='100px';
+    image.style.marginLeft='200px';
 }
