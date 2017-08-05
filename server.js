@@ -18,6 +18,10 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 //Adding pages
+app.get('/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname,'ui','main.js'));
+});
+
 app.get('/artical-one', function (req, res) {
   res.sendFile(path.join(__dirname,'ui','artical-one.html'));
 });
