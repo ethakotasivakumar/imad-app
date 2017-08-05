@@ -19,7 +19,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 //Adding pages
 app.get('/artical-one', function (req, res) {
-  res.send('this is artical one');
+  res.sendFile(path.join(__dirname,'ui','artical-one.html'));
 });
 
 
