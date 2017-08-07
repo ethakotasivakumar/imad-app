@@ -6,7 +6,7 @@ var img=document.getElementById('logo');
 var marginLeft=0;
 
 function moveRight(){
-    marginLeft=marginLeft + 1;
+    marginLeft=marginLeft + 5;
     img.style.marginLeft=marginLeft + 'px';
 }
 
