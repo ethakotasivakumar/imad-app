@@ -5,11 +5,11 @@ var Pool=required('pg').Pool;
 var app = express();
 
 var config={
-    user='ethakotasivakumar';
-    database='ethakotasivakumar';
-    host='db.imad.hasura-app.io';
-    port='5432';
-    password='db-ethakotasivakumar-34361';
+    user:'ethakotasivakumar',
+    database:'ethakotasivakumar',
+    host:'db.imad.hasura-app.io',
+    port:'5432',
+    password:db-ethakotasivakumar-34361
 }
 
 app.use(morgan('combined'));
@@ -53,6 +53,8 @@ app.get('/counter',function(req,res){
     counter=counter+1;
     res.send(counter.toString());
 });
+
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
