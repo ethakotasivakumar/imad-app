@@ -3,6 +3,8 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool=required('pg').Pool;
 var app = express();
+var crypto=require('crypto');
+
 
 var config={
     user:'ethakotasivakumar',
@@ -54,7 +56,15 @@ app.get('/counter',function(req,res){
     res.send(counter.toString());
 });
 
-
+function hash(input,salt){
+    //how do we create hash
+    var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
+    return hashed.toString('hex');
+}
+app.get('/hash/:input',function(req,res){
+    var hashedString=hash(req.parans.input,'this-is-some-random-string');
+    res.send(hashedString);
+});
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
