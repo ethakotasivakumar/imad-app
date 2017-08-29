@@ -11,7 +11,7 @@ var config={
     database:'ethakotasivakumar',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password:db-ethakotasivakumar-34361
+    password:ethakotasivakumar-34361
 }
 
 app.use(morgan('combined'));
